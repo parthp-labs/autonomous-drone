@@ -19,3 +19,23 @@ venv/
 
 # OS files
 .DS_Store
+
+ai_env/
+
+# Python virtual environment
+ai_env/
+
+# ROS 2 generated files
+build/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# YOLO model weights
+*.pt
+
+# Local environment files
+.env

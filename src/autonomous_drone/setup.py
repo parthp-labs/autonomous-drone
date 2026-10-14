@@ -32,6 +32,8 @@ setup(
     entry_points={
         'console_scripts': [
             'camera_processor = autonomous_drone.camera_processor:main',
+            'ai_detector = autonomous_drone.ai_detector:main',
+
         ],
     },
 )

@@ -1,7 +1,6 @@
 from setuptools import find_packages, setup
 from glob import glob
 import os
-
 package_name = 'autonomous_drone'
 
 setup(
@@ -21,6 +20,14 @@ setup(
             os.path.join('share', package_name, 'launch'),
             glob('launch/*.launch.py')
         ),
+	(
+    		os.path.join('share', package_name, 'launch'),
+    		glob(os.path.join('launch', '*.launch.py')),
+	),
+	(
+    		os.path.join('share', package_name, 'config'),
+    		glob(os.path.join('config', '*')),
+	),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -33,7 +40,7 @@ setup(
         'console_scripts': [
             'camera_processor = autonomous_drone.camera_processor:main',
             'ai_detector = autonomous_drone.ai_detector:main',
-
+            'lidar_simulator = autonomous_drone.lidar_simulator:main',
         ],
     },
 )

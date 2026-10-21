@@ -41,6 +41,7 @@ setup(
             'camera_processor = autonomous_drone.camera_processor:main',
             'ai_detector = autonomous_drone.ai_detector:main',
             'lidar_simulator = autonomous_drone.lidar_simulator:main',
+            'pixhawk_telemetry = autonomous_drone.pixhawk_telemetry:main',
         ],
     },
 )
